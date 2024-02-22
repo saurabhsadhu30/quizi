@@ -120,7 +120,7 @@ const Auth = () => {
     } else if (passwordInput.value.length < 6) {
       setPasswordInput((prev) => ({
         ...prev,
-        error: "Weak Password",
+        error: "Password Must be atleat 6 Character Long",
       }));
       isValid = false;
     }
@@ -145,7 +145,7 @@ const Auth = () => {
     } else if (passwordInput.value.length < 6) {
       setPasswordInput((prev) => ({
         ...prev,
-        error: "Weak Password",
+        error: "Password Must be atleat 6 Character Long",
       }));
       isValid = false;
     } else if (!passwordConfirmInput.value) {
