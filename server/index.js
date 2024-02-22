@@ -47,7 +47,7 @@ app.use(globalErrorHandler);
 
 app.use("*", (req, res) => {
   res.status(400).json({
-    status: false,
+    status: true,
     msg: "url you are looking not found on server",
   });
 });
