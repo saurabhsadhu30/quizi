@@ -117,7 +117,7 @@ const Auth = () => {
         error: "Please Fill Password",
       }));
       isValid = false;
-    } else if (passwordInput.value.length < 4) {
+    } else if (passwordInput.value.length < 6) {
       setPasswordInput((prev) => ({
         ...prev,
         error: "Weak Password",
