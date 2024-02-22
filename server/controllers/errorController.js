@@ -5,8 +5,8 @@ const globalErrorHandler = (err, req, res, next) => {
 
   res.status(err.statusCode).json({
     status: err.status,
-    msg: err.msg || "Password must be at least 6 characters long",
-    error: err,
+    // msg: err.msg || "Password must be at least 6 characters long",
+    error:"Password must be at least 6 characters long" ,
     stack: err.stack,
   });
 };
